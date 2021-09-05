@@ -1,0 +1,93 @@
+.styleContainer {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.styleInput {
+    margin: 0 5px 0 0;
+    width: 300px;
+}
+
+.styleTable {
+    padding: 5px 5px 5px 5px;
+    width: 700px;
+    border: solid black 1px;
+}
+
+.styleTr {
+    height: 40px;
+    font-weight: bold;
+}
+
+.styleTdText {
+    width: 470px;
+    text-align: center;
+}
+
+.styleTd {
+    text-align: center;
+}
+
+@media screen and (max-width: 710px) {
+    .styleContainer {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .styleInput {
+        margin: 0 5px 0 0;
+        width: 200px;
+    }
+
+    .styleTable {
+        padding: 5px 5px 5px 5px;
+        width: 600px;
+        border: solid black 1px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .styleContainer {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .styleInput {
+        margin: 0 5px 0 0;
+        width: 150px;
+    }
+
+    .styleTable {
+        padding: 5px 5px 5px 5px;
+        width: 450px;
+        border: solid black 1px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .styleContainer {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .styleInput {
+        margin: 0 5px 0 0;
+        width: 150px;
+    }
+
+    .styleForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .styleBtn {
+        width: 158px;
+    }
+
+    .styleTable {
+        padding: 5px 5px 5px 5px;
+        width: 350px;
+        border: solid black 1px;
+    }
+}
