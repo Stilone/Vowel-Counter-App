@@ -1,11 +1,10 @@
 import React, {useState} from "react";
-import {TableComponent} from "../table-component/Table.component";
 import "../../css/index.css"
 
 export const InputComponent = (props) => {
-    const [stringNumber, setStringNumber] = useState({number: ''})
-    const {state} = props
+    const { onGetString } = props
 
+    const [stringNumber, setStringNumber] = useState({number: ''})
 
     const handleChange = (event) => {
         const newNumber = {...stringNumber}
@@ -31,7 +30,7 @@ export const InputComponent = (props) => {
             })
             return newString
         }
-        props.onGetString(transformString())
+        onGetString(transformString())
     }
 
     return (
@@ -39,7 +38,7 @@ export const InputComponent = (props) => {
             <form className="styleForm">
                 Идентификаторы строк:
                 <input type="text"
-                       name='number'
+                       name="number"
                        value={stringNumber.number}
                        onChange={handleChange}
                        className="styleInput"
@@ -51,7 +50,6 @@ export const InputComponent = (props) => {
                 </button>
             </form>
             <br/>
-            <TableComponent state={state}/>
         </div>
     );
 };
@@ -62,4 +60,4 @@ export const InputComponent = (props) => {
 //создаю функцию transformString в которой создаю пустой массив newString.далее для массива строк string вызывю цикл forEach, в нем для каждого элемента изменяю строки на числа, и проверяю по условию if
 //есть ли в массиве newString элемент цикла, если да вывожу ошибку, так же проверяю является ли это число >20 и так же вывожу ошибку, если нет, пушу в массив newString
 //в конце функции возвращаю массив с данными.Так же в конце функции handleClick вызываю у props функцию onGetString из mapDispatchToProps и вней вызываю функцию transformString()
-//Так же создаю компонент TableComponent в который передаю state из props
+//Так же создаю компонент TableComponent в который передаю onGetString из props

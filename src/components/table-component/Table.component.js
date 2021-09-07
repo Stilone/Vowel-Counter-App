@@ -2,10 +2,10 @@ import React from 'react';
 import "../../css/index.css"
 
 export const TableComponent = (props) => {
-    const {state} = props
+    const {texts} = props
 
     const createTable = () => {
-        if (state.text.length === 0) {
+        if (texts.length === 0) {
             return 'Введите число'
         } else {
             return <table className="styleTable">
@@ -17,7 +17,7 @@ export const TableComponent = (props) => {
                 </tr>
                 </thead>
                 <tbody>
-                {state.text.map((text) => {
+                {texts.map((text) => {
                     return <tr>
                         <td>{text.text}</td>
                         <td className="styleTd">{text.words}</td>
@@ -36,5 +36,5 @@ export const TableComponent = (props) => {
         </div>
     );
 };
-//Создаю компонент TableComponent в котором создаю div и вызывю функцию createTable(). В createTable создаю проверку если в стейте ничего нет то отобрази введите число
-//Если в стейте появились строки, создаю таблицу через цикл map в котороую передаю из стейта текст, количество гласных и количество слов в тексте.
+//Создаю компонент TableComponent в котором создаю div и вызывю функцию createTable(). В createTable создаю проверку, если в texts ничего нет то отобрази 'введите число'
+//Если в texts появились строки, создаю таблицу через цикл map в котороую передаю текста, количество гласных и количество слов в тексте.
