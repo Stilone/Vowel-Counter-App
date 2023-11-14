@@ -1,7 +1,7 @@
 #  Vowel Counter App 🚀
 
-
-https://sun9-30.userapi.com/impg/Wg93RBfjpX4pDN3pt2l31bnXKwsaUCi5BgAXVA/ndCXBmjNxxA.jpg?size=711x411&quality=96&sign=db030c416e967b963f3ad166f70370ca&type=album
+### Home Page
+![Главная страница](https://sun9-25.userapi.com/impg/aePsv7grbXfZHpNXOAYSBpJJ8E8ZDWvtmSgdKA/_q3XURqnd3Y.jpg?size=763x429&quality=96&sign=f15714dcda5be1db88fbf65325ea2ca6&type=album)
 
 Welcome to the Vowel Counter App project!
 This project is a simple web application that calculates the number of vowels and words in a given text, supporting 10 different languages. The text is retrieved from a server, and the application is built using the React and Redux libraries.
