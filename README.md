@@ -1,7 +1,6 @@
 #  Vowel Counter App 🚀
 
-Welcome to the Vowel Counter App project!
-This project is a simple web application that calculates the number of vowels and words in a given text, supporting 10 different languages. The text is retrieved from a server, and the application is built using the React and Redux libraries.
+Welcome to the Vowel Counter App project! This project is a simple web application that calculates the number of vowels and words in a given text, supporting 10 different languages. The text is retrieved from a server, and the application is built using the React and Redux libraries. For correct operation, enter numbers from 1 to 20 in the search bar to see the result.
 
 ## Features:
 
@@ -15,7 +14,7 @@ To run the application locally, follow these simple steps.
 
 You can either follow the link:
  
-🌐 --- 🌐
+🌐 https://stilone.github.io/Vowel-Counter-App 🌐
 
 Or expand the project your computer:
 
